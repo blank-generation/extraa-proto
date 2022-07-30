@@ -19,7 +19,7 @@
     <script>
         document.body.className = 'hidden';
     </script>
-    <div data-scroll-container>
+    <div data-scroll-container class="scroll-container">
         <div data-scroll-section class="landing section">
             <div data-scroll>
                 <!-- <h1>Extraa</h1> -->
@@ -200,12 +200,15 @@
 
     <script>
         window.addEventListener("load", function (event) {
-            let lazyScroll = new LocomotiveScroll({
+            const lazyScroll = new LocomotiveScroll({
                 el: document.querySelector('[data-scroll-container]'),
                 smooth: true,
-                mobile: {
-                    smooth: true
-                },
+                // smartphone: {
+                //     smooth: true
+                // },
+                // mobile: {
+                //     smooth: true
+                // },
                 tablet: {
                     smooth: true
                 }

@@ -18,12 +18,12 @@
 
 .hidden {
     opacity: 0;
-  }
+}
 
-  .visible {
+.visible {
     opacity: 1;
     transition: opacity 1s ease-out;
-  }
+}
 
 html.has-scroll-smooth {
     overflow: hidden;
@@ -32,6 +32,10 @@ html.has-scroll-smooth {
     right: 0;
     top: 0;
     bottom: 0;
+}
+
+.scroll-container {
+    overflow-x: hidden;
 }
 
 body {
@@ -84,6 +88,7 @@ i {
 
 
 /* -------------------Landing BG Images---------------- */
+
 
 #halo-1 {
     position: absolute;
@@ -314,6 +319,39 @@ footer a {
 
 @media only screen and (max-width: 800px) {
 
+    #landing-content {
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .landing-text {
+        justify-content: center;
+    }
+
+    .landing-text .huge-text {
+        margin-bottom: 0;
+    }
+
+    .landing-logo {
+        width: 100%;
+    }
+
+    .landing-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .landing-btn {
+        margin-right: 4%;
+        padding: 3% 3%;
+        margin-top: 10%;
+
+    }
+
+    #curve-2 {
+        top: 20%;
+    }
+
     #curve-1,
     #curve-2 {
         max-width: 60vw;
@@ -330,9 +368,14 @@ footer a {
 
         /* padding-right: 10%; */
     }
-    .image-container img{
+
+    .icon-text img{
+        width: 60%;
+    }
+    .image-container img {
         width: 70%;
     }
+
     .section-2-content {
         padding: 6%;
     }
@@ -364,37 +407,13 @@ footer a {
         height: 100%;
     }
 
-    .slide-img-container img{
+    .slide-img-container img {
         width: 60%;
     }
 
 }
 
-@media only screen and (max-width: 400px) {
-    #landing-content {
-        flex-direction: column;
-        /* justify-content: center; */
-    }
-    .landing-text{
-        justify-content: center;
-    }
-    .landing-text .huge-text{
-        margin-bottom: 0;
-    }
-    .landing-logo{
-        width: 100%;
-    }
-    .landing-logo{
-        display: flex;
-        justify-content: center;
-    }
-    .landing-btn {
-        margin-right: 4%;
-        padding: 3% 3%;
-        margin-top: 10%;
-
-    }
-}
+@media only screen and (max-width: 400px) {}
 
 /* ----- ANIMATIONS ----- */
 
